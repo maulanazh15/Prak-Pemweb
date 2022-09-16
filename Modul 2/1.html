@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>HTML Forms</h2>
+    <form method="get" action="proses.php" enctype="multipart/form-data">
+        <table>
+        <tr>
+            <td>
+            Nama Depan 
+            </td>
+            <td>:</td>
+            <input type=text name=depan size=40 placeholder="nama depan" required><br>
+            <input type=color name=depan size=40 placeholder="nama depan" required><br>
+            <input type="range">
+        </tr>
+        <tr></tr>
+        Nama Belakang <br>
+        <input type=text name=belakang value="afuan...."><br>
+        Email <br>
+        <input type=text name=email><br>
+        JK
+        <input type=radio name=jk value=L>L
+        <input type=radio name=jk value=P checked>P<br>
+        <input type=date name=tanggal><br>
+        foto<input type="file" name="foto"><br>
+        Hobi
+        <input type=checkbox name=hobi value="Rebahan">Rebahan
+        <input type=checkbox name=hobi value="Renang">Renang
+        <input type=checkbox name=hobi value="Makan">Makan
+        <br>
+        Tanggal
+        <select name=tanggal>
+            <option value="">Pilih tanggal</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected>3</option>
+        </select><br>
+        Alamat<br>
+        <textarea name="alamat" rows="7" cols="50"></textarea><br>
+
+        <input type=submit name=simpan value="Simpan">
+        <input type=reset name=batal value="Batal">
+        </table>
+    </form>
+
+</body>
+
+</html>

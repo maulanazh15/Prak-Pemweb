@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="daftar.php" method="get">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td><input type="text" name="txtNama" id="txtNama"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="sandi" id="pass" ></td>
+            </tr>
+            <tr>
+                <td>Jenis <br> Kelamin</td>
+                <td>
+                    <select name="JenisKelamin" id="JK">
+                        <option value="Laki-laki">Laki-Laki</option>
+                        <option value="Perempuan" selected>Perempuan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><textarea name="" id="" cols="45" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <input type="submit" name="simpan" value="Simpan">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<style>
+    tr:nth-child(odd) {
+        background-color: lightgrey;
+    }
+</style>
+</html>
