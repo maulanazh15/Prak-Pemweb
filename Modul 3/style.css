@@ -1,0 +1,23 @@
+body {
+    background-color: blue;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: red;
+    text-align: center;
+}
+table {
+    border: solid;
+    border-style: dashed;
+    background: grey;
+}
+.td {
+    font-weight: bold;
+}
+
+textarea {
+
+    border-radius: 5;
+    box-sizing: content-box;
+}
