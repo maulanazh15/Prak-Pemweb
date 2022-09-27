@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel berwarna</title>
+    <script lang="javascript">
+        function cekForm() {
+            nama = document.formku.nama.value;
+            email = document.formku.email.value;
+            komentar = document.formku.komentar.value;
+            // alert("nama")
+            function cekNama(params) {
+                if(nama==""){
+                    alert("Nama harus diisi!");
+                    return false;
+                } return true;
+            }
+            function  cekEmail(params) {
+                if (email==""){
+                    alert("Email harus diisi!");
+                    return false
+                }
+                return true;
+            }
+            function cekKomentar(params) {
+                if(komentar==""){
+                    alert("Komentar harus diisi")
+                }
+            }
+            cekN = cekN
+        }
+        // function cek() {
+        //     if (cekForm) {
+        //         document.formku
+        //     }
+        // }
+    </script>
+</head>
+<body>
+    <form name="formku" onsubmit="event.preventDefault(); cekForm();">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" name="nama" size="40"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input type="email" name="email" size="40"></td>
+            </tr>
+            <tr>
+                <td>Komentar</td>
+                <td>:</td>
+                <td><textarea name="komentar" id="" cols="50" rows="9"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Simpan" onclick=""></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

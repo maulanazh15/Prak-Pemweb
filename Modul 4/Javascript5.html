@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba Javascript</title>
+</head>
+<body>
+    <script lang="javascript">
+       function cek() {
+        if (document.frmbuku.nama.value=="") {
+            alert('nama harus diisi');
+            document.frmbuku.nama.focus();
+            return false;
+        } else {
+            return true;
+        }
+       }
+    </script>
+    <form action="data.html" method="post" name="frmbuku" onsubmit="return cek()"></form>
+    <table>
+        <tr>
+            <td>Nama</td>
+            <td><input type="text" name="nama"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" name="kirim" value="Kirim"></td>
+        </tr>
+        
+    </table>
+</body>
+</html>

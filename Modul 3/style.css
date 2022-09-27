@@ -10,6 +10,9 @@ h2 {
 form {
     border-style: dashed;
 }
+table {
+    background-color: grey;
+}
 .td {
     font-weight: bold;
 }
