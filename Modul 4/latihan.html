@@ -14,8 +14,10 @@
             function cekNama(params) {
                 if(nama==""){
                     alert("Nama harus diisi!");
-                    return false;
-                } return true;
+                } else if (nama.length > 25) {
+                    alert('Nama lebih dari 25 karakter')
+                }
+                return true;
             }
             function  cekEmail(params) {
                 if (email==""){
@@ -27,11 +29,12 @@
             function cekKomentar(params) {
                 if(komentar==""){
                     alert("Komentar harus diisi")
+                    
                 }
             }
-            cekN = cekNama();
-            cekE = cekEmail();
-            cekK = cekKomentar();
+            cekNama();
+            cekEmail();
+            cekKomentar();
         }
         // function cek() {
         //     if (cekForm) {

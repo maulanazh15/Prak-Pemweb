@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Konversi Nilai Matkul</title>
+        <script lang="javascript">
+            function konversiNilai() {
+                n = document.formku.nilai.value;
+                hasil = (n>=0 && n<=20)? "E" : (n>20 && n<=40) ? "D" : (n>40 && n<=60) ? "C" : (n>60 && n<=80) ? "B" : (n>80 && n<=100) ? "A" : "tidak ada";  
+                document.formku.hasil.value = hasil;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="formku" align="center">
+            Masukan Nilai Matkul <br>
+            <input name="nilai" type="text" size="3"> <input type="button" value="Proses" onclick="konversiNilai();"><br>
+            Nilai Hasil Konversi
+            <br>
+            <input name="hasil" type="text" size="4" readonly>
+        </form>
+    </body>
+</html>
