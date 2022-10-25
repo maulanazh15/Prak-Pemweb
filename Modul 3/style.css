@@ -7,17 +7,12 @@ h2 {
     background-color: red;
     text-align: center;
 }
-table {
-    border: solid;
+form {
     border-style: dashed;
-    background: grey;
+}
+table {
+    background-color: grey;
 }
 .td {
     font-weight: bold;
-}
-
-textarea {
-
-    border-radius: 5;
-    box-sizing: content-box;
 }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertama</title>
+    <script type="text/javascript" src="./dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".sembunyi").click(function () {
+                $("#foto").hide("slow");
+                
+            }); 
+            $(".tampil").click(function () {
+                    $("#foto").show("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button class="sembunyi">Sembunyikan</button>
+    <button class="tampil">Tampilkan</button>
+    <p><img id="foto" src="https://source.unsplash.com/600x600?mountain"></p>
+</body>
+</html>
