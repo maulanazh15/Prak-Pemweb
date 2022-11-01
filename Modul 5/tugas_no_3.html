@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script type="text/javascript" src="./dist/jquery.min.js"></script>
+    <title>Tugas Ketiga</title>
+    <script type="text/javascript" src="dist/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $(".fade-in").click(function () {
@@ -15,7 +16,7 @@
                 $(".box").fadeOut("slow");
             })
             $(".fade-to").click(function () {
-                $(".box").fadeTo("slow",0.3);
+                $(".box").fadeTo("slow", 0.3);
             })
         });
     </script>
@@ -24,19 +25,25 @@
             width: 300px;
             height: 200px;
             background-color: yellow;
-            border: 2px solid black;
+            border: 2px solid gray;
             margin: 20px;
         }
+
         button {
             margin-left: 30px;
         }
-        
+        .container {
+            padding: 10px 10px 10px 10px;
+            border: 5px double blue;
+        }
     </style>
 </head>
 <body>
-    <div class="box"></div>
-    <button class="fade-in">Fade In</button>
-    <button class="fade-out">Fade Out</button>
-    <button class="fade-to">Fade to 0.3</button>
+    <div class="container">
+        <div class="box"></div>
+        <button class="fade-in">Fade In</button>
+        <button class="fade-out">Fade Out</button>
+        <button class="fade-to">Fade to 0.3</button>
+    </div>
 </body>
 </html>

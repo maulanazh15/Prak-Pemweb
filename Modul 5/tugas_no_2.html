@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pertama</title>
-    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
+    <title>Tugas Kedua</title>
+    <script type="text/javascript" src="dist/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $( "p" ).dblclick(function() {
-  $( this ).toggleClass( "redbox" );
-});
+            $(".yellowbox").dblclick(function () {
+                $(this).toggleClass("redbox");
+            });
         });
     </script>
     <style type="text/css">
         p {
-            width: 100px;
-            height: 100px;
-            margin: 5px;
+            margin: auto;
+            margin-bottom: 5px;
+            text-align: center;
+
         }
         .yellowbox {
             background-color: yellow;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
         }
         .redbox {
             background: red;
         }
         .box {
             display: flex;
+            padding: 6px;
+        }
+        .container {
+            padding: 10px 10px;
+            border-style: groove;
         }
     </style>
 </head>
+
 <body>
-    <span>Klik 2x pada setiap kotak untuk mengubah warnanya</span>
-    <div class="box">
-        <p class="yellowbox"></p>
-        <p class="yellowbox"></p>
-        <p class="yellowbox"></p>
-        <p class="yellowbox"></p>
+    <div class="container">
+        <p>Klik 2x pada setiap kotak untuk mengubah warnanya</p>
+        <div class="box">
+            <div class="yellowbox"></div>
+            <div class="yellowbox"></div>
+            <div class="yellowbox"></div>
+            <div class="yellowbox"></div>
+        </div>
     </div>
-    
 </body>
 </html>
